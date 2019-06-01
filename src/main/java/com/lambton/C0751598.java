@@ -9,6 +9,10 @@ public class C0751598 {
         String name2 = "AaroN LANGille";
 
 
+        String originalstr = "I am student";
+        String substrtobereplaced = "student";
+        String strtobeadded = "studing";
+
 
         LambtonStringTools s1 = new LambtonStringTools();
         s1.reverse(original);
@@ -24,6 +28,8 @@ public class C0751598 {
 
         System.out.println("question 3 if name has only 2 names");
         s1.nameInitial(name2);
+
+        s1.replaceSubString(originalstr, substrtobereplaced, strtobeadded);
 
 
     }

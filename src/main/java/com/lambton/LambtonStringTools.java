@@ -43,31 +43,33 @@ public class LambtonStringTools {
     }
 
 
-        public void nameInitial(String name){
-            String initials= "";
-            System.out.println("Question 3: Name is : "+ name);
+    public void nameInitial(String name){
+        String initials= "";
+        System.out.println("Question 3: Name is : "+ name);
 
-            String[] partOfNames = name.split(" ");
-            if (partOfNames.length == 3){
-                for(int i= 0 ; i < partOfNames.length ; i++){
-                    if( i<2){
-                        initials += partOfNames[i].charAt(0)+". ";
-                    }
-                    if(i==2){
-                        initials += partOfNames[i];
-                    }
+        String[] partOfNames = name.split(" ");
+        if (partOfNames.length == 3){
+            for(int i= 0 ; i < partOfNames.length ; i++){
+                if( i<2){
+                    initials += partOfNames[i].charAt(0)+". ";
                 }
-
-                System.out.println("Answer 3: initials of name is :" + initials);
-
-            }else{
-                System.out.println("Answer 3 : null");
+                if(i==2){
+                    initials += partOfNames[i];
+                }
             }
 
-////
-////            System.out.println("Answer 1: Reversed String is : "+reversedString);
+            System.out.println("Answer 3: initials of name is :" + initials);
+
+        }else{
+            System.out.println("Answer 3 : null");
         }
 
+    }
+
+    public void replaceSubString(String originalstr, String substrtobereplaced, String strtobeadded){
+           System.out.println(originalstr.substring(originalstr.indexOf(substrtobereplaced),
+                   originalstr.indexOf(substrtobereplaced)+substrtobereplaced.length()));
 
     }
+}
 
