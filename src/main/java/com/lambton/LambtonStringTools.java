@@ -67,8 +67,8 @@ public class LambtonStringTools {
     }
 
     public void replaceSubString(String originalstr, String substrtobereplaced, String strtobeadded){
-           System.out.println(originalstr.substring(originalstr.indexOf(substrtobereplaced),
-                   originalstr.indexOf(substrtobereplaced)+substrtobereplaced.length()));
+        System.out.println(originalstr.replace(substrtobereplaced, strtobeadded));
+
 
     }
 }
